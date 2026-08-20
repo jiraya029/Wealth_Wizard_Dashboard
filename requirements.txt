@@ -1,0 +1,11 @@
+# Dependencies for Streamlit Community Cloud, which reads requirements.txt and
+# ignores pyproject.toml. pyproject.toml stays for Streamlit in Snowflake.
+#
+# The connector is named explicitly rather than using streamlit[snowflake]:
+# that extra pulls in snowflake-snowpark-python, which does not yet publish
+# wheels for Python 3.14. This app only calls conn.query(), so the connector on
+# its own is enough. The [pandas] extra supplies the pyarrow/pandas bridge that
+# turns query results into DataFrames.
+streamlit>=1.54.0
+snowflake-connector-python[pandas]>=4.7.0
+pandas>=2.2.0

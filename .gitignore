@@ -1,0 +1,21 @@
+# Streamlit Cloud ignores this file — secrets are managed via the UI
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Snowflake workspace files (not needed for Streamlit Cloud)
+snowflake.yml

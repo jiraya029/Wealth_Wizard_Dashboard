@@ -1,0 +1,15 @@
+# Streamlit compiles these into its widget styles once at load, so they cannot
+# change at runtime. They are set to the dark palette, which is the mode the app
+# opens in; the light mode is applied over the top by the stylesheet in theme.py.
+#
+# Deliberately no [theme.light] / [theme.dark] sections: those follow the browser
+# preference, which would fight the in-app switch for control. One source of
+# truth is the switch in the sidebar.
+
+[theme]
+base = "dark"
+primaryColor = "#F2A03D"
+backgroundColor = "#14142B"
+secondaryBackgroundColor = "#1E1D3F"
+textColor = "#EAE7F5"
+font = "sans serif"
